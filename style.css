@@ -1,0 +1,96 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0px;
+    margin: 0px;
+    padding-top: 100px;
+    font: arial serif sans-serif;
+    background-color: darkgrey;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.navbar{
+    /* box-sizing: border-box; */
+    display: flex;
+    background-color: black;
+    padding: 20px;
+    /* margin: 10px; */
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* z-index: 1000; */
+}
+
+#logo{
+    color: white;
+    font-size: 2rem;
+}
+
+#addTaskButton {
+    padding: 8px 16px;
+    font-size: 1rem;
+    color: #333;
+    background-color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#task_entry{
+    padding: 8px 16px;
+    font-size: 1rem;
+    color: #333;
+    background-color: #fff;
+    border: none;
+    border-radius: 4px;
+}
+
+/* .container{
+    display: flex;
+    margin: 50px;
+} */
+
+.task_box{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: white;
+} 
+
+.task_box > button{
+    padding: 10px;
+}
+
+.task_box > p{
+    padding: 100px;
+}
+
+#card_container {
+    /* padding-top: 10px; */
+    padding-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.delete-task{
+    /* margin: auto; */
+    width: 100%;
+    cursor: pointer;
+}
+
+.completed{
+    background-color: green;
+}
